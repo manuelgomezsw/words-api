@@ -1,0 +1,20 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+    <module name="words-api" />
+    <working_directory value="$PROJECT_DIR$" />
+    <envs>
+      <env name="CORS_ORIGIN" value="http://localhost:4200" />
+      <env name="DB_NAME" value="quotes" />
+      <env name="DB_PASS" value="M9@I*49e2b#9Ek}_" />
+      <env name="DB_USER" value="quotes-user" />
+      <env name="EMAIL_TEMPLATE_ID" value="7dnvo4dd62r45r86" />
+      <env name="INSTANCE_CONNECTION_NAME" value="quotes-api-100:us-east1:quotes-instance" />
+      <env name="MAILERSEND_API_KEY" value="mlsn.bc7e8c2c7047fdc1d7cc4c7b4bd64ff1390b3762fb3a362c516e7a9f46fe5376" />
+    </envs>
+    <kind value="FILE" />
+    <package value="words-api" />
+    <directory value="$PROJECT_DIR$" />
+    <filePath value="$PROJECT_DIR$/main.go" />
+    <method v="2" />
+  </configuration>
+</component>
