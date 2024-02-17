@@ -47,8 +47,9 @@ func Update(c *gin.Context) {
 		})
 		return
 	}
+	word.WordID = wordID
 
-	if err := services.Update(wordID, &word); err != nil {
+	if err := services.Update(&word); err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{
 			"message": "Error updating word",
 			"error":   err.Error(),

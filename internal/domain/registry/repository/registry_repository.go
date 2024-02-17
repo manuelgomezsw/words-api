@@ -23,12 +23,12 @@ func Create(newWord *domain.Word) error {
 	return nil
 }
 
-func Update(wordID int64, currentWord *domain.Word) error {
+func Update(currentWord *domain.Word) error {
 	_, err := mysql.ClientDB.Exec(
 		"UPDATE quotes.words SET word = ?, meaning = ?  WHERE word_id = ?",
 		currentWord.Word,
 		currentWord.Meaning,
-		wordID,
+		currentWord.WordID,
 	)
 	if err != nil {
 		return err

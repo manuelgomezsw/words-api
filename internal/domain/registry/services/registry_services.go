@@ -16,10 +16,10 @@ func Create(word *domain.Word) error {
 	return nil
 }
 
-func Update(wordID int64, currentWord *domain.Word) error {
+func Update(currentWord *domain.Word) error {
 	formatWord(currentWord)
 
-	if err := repository.Update(wordID, currentWord); err != nil {
+	if err := repository.Update(currentWord); err != nil {
 		return err
 	}
 
